@@ -23,11 +23,13 @@ Así también se probó ingresar la letra "e" o los signos "+" y "-" en las casi
 
 "ERROR: ingrese operandos válidos."
 
+
 * Pruebas de operadores:
 
 Se ingresaron números en las casillas de operandos pero se dejó en blanco la casilla de operadores y se obtuvo el resultado esperado de error.
 
 "ERROR: ingrese un operador válido."
+
 
 * Pruebas de operaciones:
 
@@ -39,6 +41,7 @@ Se ingresaron números en las casillas de operandos pero se dejó en blanco la c
     devuelven resultados correctos y esperados.
 
 
+
     - -5 + 5 = 0
     - -5 - 5 = -10
     - -5 * 5 = -25
@@ -47,9 +50,11 @@ Se ingresaron números en las casillas de operandos pero se dejó en blanco la c
     devuelven resultados correctos y esperados.
 
 
+
     - 0.5 + 0.15 = 0.65
 
     esta y las demás operaciones con decimales devuelven resultados correctos y esperados.
+
 
 
     - 5 / 0 = ERROR: la operación no es válida, no se puede dividir por cero.
@@ -57,10 +62,12 @@ Se ingresaron números en las casillas de operandos pero se dejó en blanco la c
     devuelve el mensaje de error esperado.
 
 
+
     - 1254524855585218 * 1552354785223589 = ERROR: el resultado es demasiado grande o demasiado pequeño para ser mostrado en pantalla.
     - 1 / 12452114451121565152561 = ERROR: el resultado es demasiado grande o demasiado pequeño para ser mostrado en pantalla.
 
     devuelven el mensaje de error esperado.
+    
 
 En un principio ocurrieron una serie de errores en la realización de operaciones debido a que se presentaban los mensajes de error cuando no correspondían, esto fue corregido modificando el código JS.
 Principalmente se debieron al ordenamiento de las diferentes operaciones dentro la función que ejecutaba el resultado y validaba las operaciones; así como también la conversión en número de los valores ingresados en los campos de texto del HTML por medio de la función Number() en vez de parseFloat() o intentar identificar los espacios vacíos con "" en vez de la función isNan().
